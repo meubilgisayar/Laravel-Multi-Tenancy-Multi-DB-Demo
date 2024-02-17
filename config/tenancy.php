@@ -16,7 +16,7 @@ return [
      * Only relevant if you're using the domain or subdomain identification middleware.
      */
     'central_domains' => [
-        'project.test',
+        'laraveldaily-tenancy.test',
     ],
 
     /**
@@ -49,8 +49,8 @@ return [
          * Tenant database names are created like this:
          * prefix + tenant_id + suffix.
          */
-        'prefix' => 'tenancy_',
-        'suffix' => '',
+        'prefix' => 'laraveldaily_tenant_',
+        'suffix' => '_db',
 
         /**
          * TenantDatabaseManagers are classes that handle the creation & deletion of tenant databases.

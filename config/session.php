@@ -155,7 +155,7 @@ return [
     |
     */
 
-    'domain' => '.' . env('SESSION_DOMAIN', 'project.test'),
+    'domain' => '.' . env('SESSION_DOMAIN', 'laraveldaily-tenancy.test'),
 
     /*
     |--------------------------------------------------------------------------

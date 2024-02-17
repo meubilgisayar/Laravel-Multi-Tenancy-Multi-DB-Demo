@@ -47,7 +47,8 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
         ]);
         $tenant->domains()->create([
-            'domain' => $request->subdomain . '.' . config('tenancy.central_domains')[0],
+            //'domain' => $request->subdomain . '.' . config('tenancy.central_domains')[0],
+            'domain' => $request->subdomain,
         ]);
         $user->tenants()->attach($tenant->id);
 

@@ -16,8 +16,15 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
+Route::get('/optimize', function () {
+    \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+    \Illuminate\Support\Facades\Artisan::call('config:cache');
+    return 'optimize yapıldı';
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 require __DIR__.'/auth.php';
